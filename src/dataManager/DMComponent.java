@@ -221,4 +221,16 @@ public class DMComponent {
 			return name; 
 		}
 	}
+
+	
+	public void deleteList(String listName) {
+		// TODO Auto-generated method stub
+		int index = getIndexForList(listName); 
+		if (index == -1) 
+			IOComponent.getComponent().output("No such list, " + listName + ", exists.\n"); 
+	
+	else{
+		lol.remove(index);
+	}
+	}
 }
